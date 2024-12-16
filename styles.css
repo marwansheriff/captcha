@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.image-container div {
+    width: 100%; /* Fixed size for div */
+    height: 100%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden; /* Ensure SVG content doesn't overflow */
+}
+
+.image-container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.correct {
+    border-color: green !important;
+}
+
+.incorrect {
+    border-color: red !important;
+}
+
+.message {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #444;
+}
+
+#finishButton {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#finishButton.show {
+    display: inline-block;
+}
+
+#finishButton:hover {
+    background-color: #218838;
+}
