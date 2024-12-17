@@ -1,5 +1,4 @@
 const svgSources = {
-    bird: "img/bird.svg",
     house: "img/house.svg",
     tree: "img/tree.svg",
     car: "img/car.svg",
@@ -38,7 +37,7 @@ async function initializeGrid() {
     const grid = document.getElementById("imageGrid");
     grid.innerHTML = "";
     selectedObjects = 0;
-    const totalGrids = 9;
+    const totalGrids = 21;
     const correctCount = 4;
 
     const indices = Array.from({ length: totalGrids }, (_, i) => i);
